@@ -22,8 +22,8 @@ int main (int argc, char **argv)
 }
 void usage (char *progname)
 {
-	printf ("Hi user :) \n \
-		To run this program you must suply one argument.\n \
-		Something like this:\n \
-		%s: your_name\n", progname);
+	printf ("Hi user :) \n", 
+		"To run this program you must suply one argument.\n", 
+		"Something like this:\n", 
+		"%s: your_name\n", progname);
 }
