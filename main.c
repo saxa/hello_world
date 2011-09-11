@@ -26,10 +26,3 @@ int main (int argc, char *argv[])
 
 	return 0;
 }
-void usage (char *pname)
-{
-	printf ("Hi user :) \n");
-	printf ("To run this program you must suply one argument.\n");
-	printf ("Something like this:\n");
-	printf ("%s: your_name\n", pname);
-}
