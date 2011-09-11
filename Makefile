@@ -11,4 +11,5 @@ hello_world: $(OBJS)
 main.o: main.c
 	$(CC) $(CFLAGS) -c $(SRCS) 
 
-clean: rm $(OBJS) hello_world
+clean: 
+	rm $(OBJS) hello_world ./*~
