@@ -11,7 +11,7 @@ int main (int argc, char **argv)
 {
 	/* Lets see if we are run with args */
 	if ( argc=0 )
-		usage (*argv);
+		usage (argv[0]);
 
 	int i = 0;
 
@@ -25,5 +25,5 @@ void usage (char *progname)
 	printf ("Hi user :) \n \
 		To run this program you must suply one argument.\n \
 		Something like this:\n \
-		%s: your_name\n", *progname);
+		%s: your_name\n", progname);
 }
