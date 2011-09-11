@@ -13,3 +13,6 @@ main.o: main.c
 
 clean: 
 	rm $(OBJS) hello_world ./*~
+
+debug: main.o hello_world
+	$(CC) $(CFLAGS) -g -c $(SRCS) -DDEBUG
