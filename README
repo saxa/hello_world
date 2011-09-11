@@ -1,2 +1,12 @@
 This readme file is intentionally empty.
 So, you should not see any text in here.
+
+
+Thats it, people. Here you have an simple hello world example written in C.
+The purpose of writing it and improving it is to see how the multiple source files are used in the C programming language,
+to learn more about Makefiles, and later I will try to add an configure script so we will try to learn also autotools.
+
+Written by Sasa Ostrouska on 10 September 2011.
+
+All files in this repository are licenced under the GNU GPL.
+
