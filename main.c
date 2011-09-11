@@ -2,21 +2,19 @@
  * of course its written in C, because i like
  * C as a programming language.
  */
-
-#include <stdio.h>
-#include <stdlib.h>
-
-void usage (char *pname);
+#include "main.h"
 
 int main (int argc, char *argv[])
 {
+
 #ifdef DEBUG
 	printf ("argc: %d\n", argc);
 #endif
+
 	/* Lets see if we are run with args */
 	if ( argc<2 ){
 #ifdef DEBUG
-	printf ("argc: %d\n", argc);
+		printf ("argc: %d\n", argc);
 #endif
 		usage(argv[0]);
 		exit (0);
