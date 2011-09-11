@@ -4,15 +4,23 @@
  */
 
 #include <stdio.h>
+#include <stdlib.h>
 
 void usage (char *pname);
 
-int main (int argc, char **argv)
+int main (int argc, char *argv[])
 {
+#ifdef DEBUG
+	printf ("argc: %d\n", argc);
+#endif
 	/* Lets see if we are run with args */
-	if ( argc=0 )
-		usage (argv[0]);
-
+	if ( argc<2 ){
+#ifdef DEBUG
+	printf ("argc: %d\n", argc);
+#endif
+		usage(argv[0]);
+		exit (0);
+	}
 	int i = 0;
 
 	for (i=0; i<10; i++)
@@ -20,10 +28,10 @@ int main (int argc, char **argv)
 
 	return 0;
 }
-void usage (char *progname)
+void usage (char *pname)
 {
-	printf ("Hi user :) \n", 
-		"To run this program you must suply one argument.\n", 
-		"Something like this:\n", 
-		"%s: your_name\n", progname);
+	printf ("Hi user :) \n");
+	printf ("To run this program you must suply one argument.\n");
+	printf ("Something like this:\n");
+	printf ("%s: your_name\n", pname);
 }
